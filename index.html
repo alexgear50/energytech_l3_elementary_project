@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EnergyTech Level 3 Elementary Practice</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="hero">
+  <div class="badge">EnergyTech • Level 3 Elementary • A2</div>
+  <h1>EnergyTech Level 3 Practice Portal</h1>
+  <p class="subtitle">Colourful unit practice for Reading, Grammar, Vocabulary, Listening, Speaking and Writing</p>
+  <p class="creator">Created by: <strong>Badawy Rabie</strong> – EFL Instructor at EnergyTech, 2026</p>
+</header>
+<main>
+<section class="login-card" id="studentPanel">
+  <h2>Student Details</h2>
+  <div class="grid3">
+    <label>Student Name<input id="studentName" placeholder="e.g. Ahmed Ali"></label>
+    <label>Student ID<input id="studentId" placeholder="e.g. 12345"></label>
+    <label>Group<input id="studentGroup" placeholder="e.g. L3-A"></label>
+  </div>
+  <div class="actions"><button id="saveStudent">Save / Start</button><button id="progressBtn" class="secondary">Progress</button><button id="teacherBtn" class="ghost">Teacher Access</button></div>
+</section>
+<section id="progressBox" class="progress-box hidden"></section>
+<section id="teacherBox" class="teacher-box hidden">
+  <h2>Teacher Dashboard</h2>
+  <p>This dashboard shows progress saved on this browser. Google Sheets receives submissions when you add your Apps Script URL in <code>app.js</code>.</p>
+  <div id="teacherData"></div>
+</section>
+<section class="unit-grid" id="unitGrid"></section>
+<section class="practice hidden" id="practice"></section>
+</main>
+<footer>EnergyTech Level 3 Elementary • Created by Badawy Rabie • 2026</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
